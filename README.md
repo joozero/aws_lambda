@@ -28,10 +28,24 @@ CloudWatch Event Rule
    전세계적으로 유일한 이름 필요
    예: {your_name}-transformed-images
 </pre>
-2. Lambda 생성 클릭, AWS SAR(Serverless App Repository)에서 **resize** 검색 후, resize 애플리케이션 배포 
+2. AWS Lambda > Functions 생성 클릭, AWS SAR(Serverless App Repository)에서 **resize** 검색 후, resize 애플리케이션 배포 
 <img width="1229" alt="Screen Shot 2020-09-02 at 10 32 54 PM" src="https://user-images.githubusercontent.com/59524380/91990121-5239ec00-ed6c-11ea-9a05-d270f3178172.png">
+
 3. 애플리케이션 이름 입력 후, 1번에서 생성한 S3 버킷명을 destBucket에 입력
 
 sourceBucket에는 리사이징할 이미지를 저장할 버킷명을 입력(단, sourceBucket은 SAR를 통해 자동으로 생성되는 버킷)
 ![Screen Shot 2020-09-02 at 10 40 09 PM](https://user-images.githubusercontent.com/59524380/91991021-5f0b0f80-ed6d-11ea-93eb-c24c6af8157c.png)
+
+4. AWS Lambda > Functions 생성 클릭, AWS SAR에서 **uploader** 검색 후, uploader 애플리케이션 배포 
+![Screen Shot 2020-09-02 at 11 26 39 PM](https://user-images.githubusercontent.com/59524380/91997752-6504ee80-ed75-11ea-913b-d8dc70f6638f.png)
+
+5. 애플리케이션 이름 입력 후, 3번 작업(sourceBucket)을 통해 생성된 버킷명을 입력
+![Screen Shot 2020-09-02 at 11 27 56 PM](https://user-images.githubusercontent.com/59524380/91997845-79e18200-ed75-11ea-8f67-e7bf98501e95.png)
+
+6. 배포 후, AWS Lambda > Applications를 확인하면 선택한 애플리케이션이 배포된 것을 확인할 수 있음
+
+그리고 Functions 메뉴에서 **uploader** 함수를 클릭하면 배포한 Lambda 함수는 API Gateway에 의해 트리거되는 함수임을 파악할 수 있음
+![Screen Shot 2020-09-02 at 11 29 27 PM](https://user-images.githubusercontent.com/59524380/91997991-a6959980-ed75-11ea-8419-fde47699f7c0.png)
+
+<img width="1264" alt="Screen Shot 2020-09-02 at 11 30 33 PM" src="https://user-images.githubusercontent.com/59524380/91998052-bad99680-ed75-11ea-9074-f36d003514e8.png">
 
