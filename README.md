@@ -21,4 +21,12 @@ CloudWatch Event Rule
 5. **CloudWatch Logs**를 통해, Lambda의 수행 확인 및 실행 시간 확인 
 
 
+* * * 
 ### S3 트리거를 이용한 서버리스 이미지 리사이즈 
+1. S3 버킷 생성
+<pre>
+   전세계적으로 유일한 이름 필요
+   예: {your_name}-transformed-images
+</pre>
+2. Lambda 생성 클릭, AWS SAR(Serverless App Repository)에서 **resize** 검색 후, resize 애플리케이션 배포 
+<img width="1229" alt="Screen Shot 2020-09-02 at 10 32 54 PM" src="https://user-images.githubusercontent.com/59524380/91990121-5239ec00-ed6c-11ea-9a05-d270f3178172.png">
