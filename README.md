@@ -30,3 +30,8 @@ CloudWatch Event Rule
 </pre>
 2. Lambda 생성 클릭, AWS SAR(Serverless App Repository)에서 **resize** 검색 후, resize 애플리케이션 배포 
 <img width="1229" alt="Screen Shot 2020-09-02 at 10 32 54 PM" src="https://user-images.githubusercontent.com/59524380/91990121-5239ec00-ed6c-11ea-9a05-d270f3178172.png">
+3. 애플리케이션 이름 입력 후, 1번에서 생성한 S3 버킷명을 **destBucket**에 입력
+
+sourceBucket에는 리사이징할 이미지를 저장할 버킷명을 입력(단, sourceBucket은 SAR를 통해 자동으로 생성되는 버킷)
+![Screen Shot 2020-09-02 at 10 40 09 PM](https://user-images.githubusercontent.com/59524380/91991021-5f0b0f80-ed6d-11ea-93eb-c24c6af8157c.png)
+
