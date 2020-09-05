@@ -9,17 +9,22 @@ Selenium이란 주로 웹 애플리케이션 자동화 테스트를 위한 프�
 예를 들어, 웹 사이트가 로그인을 요구하거나 프로그램을 통한 접근을 허용하지 않는 경우가 그 예입니다.
 
 그럴 때는 단순히 **requests** 라이브러리만으로는 원하는 작업을 수행할 수 없습니다.<br/>
-이때 사용할 수 있는 방법이 selenium을 이용하는 것입니다.
+이때 사용할 수 있는 방법이 selenium을 이용하는 것입니다.<br/>
+selenium은 실제 웹 브라우저가 동작하기 때문에 JS로 렌더링이 완료된 후의 DOM 결과물에 대한 접근이 가능합니다.
 
 * * *
-1. 웹 드라이버를 설치합니다.
-주로 사용하는 브라우저 및 해당 브라우저의 버전을 확인한 다음 맞는 드라이버를 선택합니다.
-https://chromedriver.chromium.org/
-
-2. pip을 통해 selenium을 설치합니다. 
+1. pip을 통해 selenium을 설치합니다. 
 <pre>
 pip install selenium
 </pre>
+
+2. 웹 드라이버를 설치합니다.
+주로 사용하는 브라우저 및 해당 브라우저의 버전을 확인한 다음 맞는 드라이버를 선택합니다.
+크롬 웹 드라이버: https://chromedriver.chromium.org/
+
++ 추가 자료<br/>
+**PhantomJS webdriver**는 cli 서버 환경에서 테스트를 진행할 경우 사용하기 적합합니다.
+
 
 ### AWS Lambda Layer
 
