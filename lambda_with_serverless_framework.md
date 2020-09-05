@@ -45,3 +45,26 @@ sls deploy
 
 생성 과정에서 나타는 endpoint를 통해 API 요청을 보내면 결과 값을 확인할 수 있습니다.<br/>
 AWS lambda 콘솔 창에서도 생성한 lambda를 확인할 수 있습니다. 
+
+* * *
+추가 자료
+1. 다양한 플러그인 탐색
+<pre>
+> sls plugin list
+> sls plugin search -q sns 
+
+> sls plugin install serverless-offline # API Gateway를 에뮬레이트해주는 플러그인 
+> sls offline start 
+</pre>
+2. prune plugin
+<pre>
+> sls plugin install serverless-prune-plugin # 과거 버전의 코드를 자동으로 삭제하는 기능(코드 저장 용량이 점점 늘어날 경우) 
+</pre>
+그 다음 serverless.yaml 파일에서 아래와 같이 입력합니다.<br/>
+최신 3개의 버전만 남기고 자동으로 삭제하라는 명령어를 의미합니다. 
+<pre>
+custom:
+  prune:
+    automatic: true
+    number: 3
+</pre>
