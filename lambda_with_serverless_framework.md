@@ -41,6 +41,6 @@ functions:
 함수를 배포할 때는 **sls deploy** 명령어를 사용합니다.
 <pre>
 sls deploy
-</p>
+</pre>
 
 생성 과정에서 나타는 endpoint를 통해 API 요청을 보내면 결과 값을 확인할 수 있습니다. 
