@@ -47,7 +47,7 @@ sls deploy
 AWS lambda 콘솔 창에서도 생성한 lambda를 확인할 수 있습니다. 
 
 * * *
-추가 자료
+#### 추가 자료
 1. 다양한 플러그인 탐색
 <pre>
 > sls plugin list
