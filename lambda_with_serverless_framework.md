@@ -43,4 +43,5 @@ functions:
 sls deploy
 </pre>
 
-생성 과정에서 나타는 endpoint를 통해 API 요청을 보내면 결과 값을 확인할 수 있습니다. 
+생성 과정에서 나타는 endpoint를 통해 API 요청을 보내면 결과 값을 확인할 수 있습니다.<br/>
+AWS lambda 콘솔 창에서도 생성한 lambda를 확인할 수 있습니다. 
