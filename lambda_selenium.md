@@ -12,7 +12,6 @@ Selenium이란 주로 웹 애플리케이션 자동화 테스트를 위한 프�
 이때 사용할 수 있는 방법이 selenium을 이용하는 것입니다.<br/>
 selenium은 실제 웹 브라우저가 동작하기 때문에 JS로 렌더링이 완료된 후의 DOM 결과물에 대한 접근이 가능합니다.
 
-* * *
 1. pip을 통해 selenium을 설치합니다. 
 <pre>
 pip install selenium
@@ -25,6 +24,7 @@ pip install selenium
 + 추가 자료<br/>
 **PhantomJS webdriver**는 cli 서버 환경에서 테스트를 진행할 경우 사용하기 적합합니다.
 
+* * *
 
 ### AWS Lambda Layer
 
