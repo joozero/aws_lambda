@@ -6,7 +6,7 @@
 Selenium이란 주로 웹 애플리케이션 자동화 테스트를 위한 프레임워크입니다.
 
 우리가 웹 크롤링을 하다 보면 여러 가지 이슈와 직면하게 됩니다.<br/>
-예를 들어, 웹 사이트가 로그인을 요구하거나 프로그램을 통한 접근을 허용하지 않는 경우가 그 예입니다.
+예를 들어, 웹 사이트가 로그인을 요구하거나 프로그램을 통한 접근을 허용하지 않는 경우 혹은 동적 웹페이지로 구성되어 있는 경우가 그 예입니다.
 
 그럴 때는 단순히 **requests** 라이브러리만으로는 원하는 작업을 수행할 수 없습니다.<br/>
 이때 사용할 수 있는 방법이 selenium을 이용하는 것입니다.<br/>
@@ -25,6 +25,19 @@ pip install selenium
 **PhantomJS webdriver**는 cli 서버 환경에서 테스트를 진행할 경우 사용하기 적합합니다.
 
 * * *
+
+### serverless framework 설치
+serverless는 lambda를 개발하고 aws 배포까지 손쉽게 할 수 있도록 도와주는 프레임 워크입니다.
+<pre>
+> npm i -g serverless
+> sls --version
+</pre>
+<pre>
+> serverless config credentials --provider aws --key [access_key_id] --secret [secret_access_key]
+> sls create -t #에러 발생과 함께 아래에 만들 수 있는 템플릿 종류 나열 됨
+> sls create -t aws-python3 web-crawling-serverless
+> serverless invoke local --function hello #로컬에서 함수 테스트 가능 
+</pre>
 
 ### AWS Lambda Layer
 
