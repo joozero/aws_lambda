@@ -14,7 +14,7 @@ selenium은 실제 웹 브라우저가 동작하기 때문에 JS로 렌더링이
 
 1. pip을 통해 selenium을 설치합니다. 
 <pre>
-pip install selenium
+pip3 install selenium
 </pre>
 
 2. 웹 드라이버를 설치합니다.
